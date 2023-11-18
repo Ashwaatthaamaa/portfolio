@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #FEE7Ad;
+            color: #070a27;
+            font-family: 'Poppins' , sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #F96167;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 30px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #070a27;
+        }
+        nav ul li a:hover {
+            color: rgb(153,153,226);
+            font-size: 1.04rem;
+        }
+        
+        .left{
+            font-size: 1.2rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 180px 0px;
+            align-items: center;
+            
+        }
+
+        .firstSection > div{
+            width: 30%;
+        }
+        
+        .leftSection{
+            font-size: 35px;
+            margin: 30px 0;
+            
+            
+        }
+
+        .rightSection img{
+            width: 80%;
+            
+        }
+        .purple{
+            color: rgb(170,107,228);
+        }
+        #element{
+            color: rgb(170,107,228);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .line{
+            border: 0;
+            background: #D0A2F7;
+            color: #D0A2F7;
+            height: 1px;
+            margin: 60px 84px;
+        }
+
+        .sectionSection h1{
+            font-size: 1.9rem;
+        }
+        .text-gray{
+            color: grey;
+        }
+
+        .secondSection .box{
+            background: #fff;
+            width: 70vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: #fff;
+            margin: 0 140px;
+        }
+
+        .thirdsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .vertical-title{
+            position: relative;
+            top: 100px;
+            width: 150px;
+        }
+        footer{
+            background-color: #F96167;
+            height: 233px;
+        }
+
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+                   
+        .first-footer{
+            padding:30px 122px;
+            display: flex;
+        }
+
+        footer {
+  
+            padding: 30px 0;
+        }
+
+        .footer-container {
+                display: flex;
+                justify-content: space-evenly;
+                
+        }
+
+        .footer-item {
+            padding: 10px 10px;
+  
+        }
+        .footer-item:hover {
+            color: rgb(177, 177, 240);
+            font-size: 1.04rem;
+            
+        }
+        .work {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 100px;
+            margin-right: 100px;
+            height: 280px;
+            
+        }
+
+        .card {
+            width: 18rem;
+            /* Add additional styling for your cards */
+            
+            height: 280px;
+        }
+
+        /* To remove the margin from the last card and prevent it from creating extra space */
+        .card:last-child {
+            margin-right: 0;
+        }
+
+        .work_heading {
+            margin-left: 100px;
+            margin-right: 90px;
+            margin-top: -100px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            
+        }
+
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav> 
+           <div class="left">Sarthak's Den</div>
+            <div class="right">
+                <ul>
+                    <!-- <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li> -->
+                    <li><a href="https://github.com/theshikharpurwar">Projects</a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkwpSZHJjJrZxsbMTcNtBRcgCqRKTVbsxnMPmzvRMvkMVQKJNsdTJZbjlswPJSBbHHgxfh">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>  
+    </header>
+    <main>
+        <section class = 'firstSection'>
+            <div class="leftSection">
+
+                Hi, My name is <span class = "purple">Sarthak</span>
+                <div>and I am a tech enthusiast and a</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+
+                <img src="WhatsApp Image 2023-11-18 at 11.53.38_ae8b3bdc.jpg" alt="dev png">
+            </div>
+        </section>
+        <h2 class="work_heading">My Projects</h2>
+        <section class = "work">
+            
+            <div class="card" style="width: 18rem;">
+                <img src="bg.avif" class="card-img-top" alt="...">
+                <div class="card-body position-absolute top-0 start-0">
+                    <h5 class="card-title" style="font-weight: bold; color: #C70039">Ceasar</h5>
+                    <p class="card-text" style="color: #219C90;">A basic encryption technique where each letter in the plaintext is shifted by a fixed number of positions down the alphabet. It is basic yet hard to decode.</p>
+                    <a href="https://github.com/code50/113178907/blob/main/caesar/caesar.c" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="bg.avif" class="card-img-top" alt="...">
+                <div class="card-body position-absolute top-0 start-0">
+                    <h5 class="card-title" style="font-weight: bold;color: #C70039">Tideman</h5>
+                    <p class="card-text" style="color: #219C90;">The Tideman method aims to determine the outcome of an election by considering voter preferences and creating a directed graph to find the most universally favored candidate. </p>
+                    <a href="https://github.com/code50/113178907/blob/main/tideman/tideman.c" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="bg.avif" class="card-img-top" alt="...">
+                <div class="card-body position-absolute top-0 start-0">
+                    <h5 class="card-title" style="font-weight: bold;color: #C70039">Readability</h5>
+                    <p class="card-text" style="color: #219C90;">A program in C that calculates the readability level of a given text using various readability formulas. And use the knowledge as per their wants and needs.</p>
+                    <a href="https://github.com/code50/113178907/blob/main/readability/readability.c" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <hr class="line">
+
+
+        
+        <section class="secondSection">
+            <span class = "text-gray">What I have done so far</span>
+            <!--<h1>Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        FrontEnd Dev (2022-Present)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Front-End Dev Intern at Bharat Intern (July 2023 - August 2023)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Web Dev Intern at CodeClause Pvt. Ltd. (August 2023 - September 2023)
+                    </div>
+                </div>
+            </div>-->
+            <div >
+                <p class = "text-gray">College Performane so far.</p>
+                <h3 style="font-weight: bold; color: #C70039">SGPA</h3>
+                <p style="color: #219C90;">Semester 1 - 9.6</p>
+                <p style="color: #219C90;">Semester 2 - 9.78</p>
+                <h3 style="font-weight: bold; color: #C70039">CGPA</h3>
+                <p style="color: #219C90;">overall - 9.7</p>
+                <h1 style="font-weight: bold; color: #C70039">PLATFORMS</h1>
+                <p style="color: #219C90;">HackerRank - <a href="https://www.hackerrank.com/profile/sk5633">https://www.hackerrank.com/profile/sk5633</a></p>
+                <p style="color: #219C90;">LeetCode - <a href="https://leetcode.com/sarthakk145/">https://leetcode.com/sarthakk145/</a></p>
+                <h1 style="font-weight: bold; color: #C70039">CERTIFICATE</h1>
+                <div >
+                    <img src="Coursera.jpg" alt="applied ml.png" width="500" height="300">
+                 </div>
+            </div>
+        </section>   
+        
+    </main>
+
+    <footer>
+
+        <div class="footer">
+            <div class="footer-first">
+                <div class="footer-container">
+                    <!-- <div class="footer-item"><a href = "">Resume(under work)</a></div> -->
+                    <div class="footer-item"><a href="https://www.linkedin.com/in/sarthak-kumar-b976aa153/">Linkedin</a></div>
+                    <div class="footer-item"><a href="https://github.com/Ashwaatthaamaa">GitHub</a></div>
+                    <div class="footer-item"><a href="https://twitter.com/Sarthak49734076">Twitter</a></div>
+                </div>
+
+                
+            </div>
+            
+        </div>
+
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front-End Developer', 'Web Developer'],
+            typeSpeed: 50,
+        });   
+    </script>
+
+    
+</body>
+</html>
